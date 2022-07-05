@@ -1,0 +1,60 @@
+package by.jonline.ht07.main;
+
+import java.util.Scanner;
+
+public class Task_04 {
+
+	public static void main(String[] args) {
+		
+		int[][] a = {{1, 2},
+				{2, 3},
+				{8, 9},
+				{4, 5}};
+		
+		int[] mdis = new int[2];
+		mdis = MaxDist(a);
+		
+		System.out.println("max distance is between point " + (mdis[0] + 1) + " and " + (mdis[1] + 1));
+
+	};
+	
+	public static int[] MaxDist(int[][] x1) {
+		
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		int value;
+
+		System.out.print("enter amount of points \n"
+				+ ">>");
+		while (!sc.hasNextInt()) {
+			sc.next();
+			System.out.print(">> ");
+		}
+		;
+
+		value = sc.nextInt();
+		
+		double dist;
+		double mdist = 0;
+		int[] maxind = new int[2];
+		
+		for (int i = 0; i < value; i++) {
+			for (int j = 0; j < value; j++) {
+				
+				dist = Math.sqrt((Math.pow(x1[i][0] - x1[j][0], 2)) + (Math.pow(x1[i][1] - x1[j][1], 2)));
+				
+				if (dist >= mdist) {
+					
+					mdist = dist;
+					maxind[0] = i;
+					maxind[1] = j;
+					
+				};
+			};
+		};
+		
+		return maxind;
+		
+	};
+
+}

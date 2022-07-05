@@ -1,0 +1,22 @@
+package by.jonline.str_as_an_object.task03;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String str = "kayak";
+		String str2 = "peep";
+		String str3 = "dog";
+		
+		isPalindrome(str);
+
+	}
+	
+	public static void isPalindrome(String str) {
+		
+		StringBuilder sb1 = new StringBuilder(str);
+		StringBuilder sb2 = sb1.reverse();
+		System.out.println(sb1);
+	}
+
+}

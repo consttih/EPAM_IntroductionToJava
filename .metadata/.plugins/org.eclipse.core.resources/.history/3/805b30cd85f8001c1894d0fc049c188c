@@ -1,0 +1,32 @@
+package by.jonline.str_as_an_array.task05;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String str = "     hello                world    j";
+		deleteSpaces(str);
+
+	}
+	
+	public static void deleteSpaces(String str) {
+		
+		StringBuilder newstr = new StringBuilder();
+		char[] sym = str.toCharArray();
+		
+		for (int i = 0; i < sym.length - 1; i++) {
+			Character ch1 = sym[i];
+			Character ch2 = sym[i + 1];
+			Character space = ' ';
+			
+			if (ch1.compareTo(space) == 0 && ch2.compareTo(space) == 0) {
+				
+			}else {
+				newstr.append(sym[i]);
+			}
+		}
+		
+		System.out.println(newstr);
+	}
+
+}

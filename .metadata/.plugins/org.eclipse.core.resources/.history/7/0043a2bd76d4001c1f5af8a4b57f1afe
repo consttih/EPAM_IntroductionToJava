@@ -1,0 +1,27 @@
+package by.online.ht02.main;
+
+import java.util.Scanner;
+
+public class Task_21 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String ans;
+		
+		System.out.println("Who are you: boy or girl. Input B or G");
+		
+		ans = sc.next();
+	
+		if(Integer.parseInt(ans) == 'G') {
+			System.out.println("I love girls!");
+			
+		}else if(Integer.parseInt(ans) == 'B') {
+			System.out.println("I love boys!");
+		}else {
+			System.out.println("You should input only G or B");
+		}
+		}
+		
+	}
+

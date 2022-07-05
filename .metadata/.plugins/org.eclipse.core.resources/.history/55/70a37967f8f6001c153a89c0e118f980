@@ -1,0 +1,22 @@
+package by.jonline.agregandcomp.task04;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		Account ivanov = new Account("PB12345543", 12000, "Ivanov Ivan Ivanovich");
+		Account ivanov2 = new Account("PB12345544", -100, "Ivanov Ivan Ivanovich");
+		Account ivanov3 = new Account("PB12345545", -30, "Ivanov Ivan Ivanovich");
+		Account ivanov4 = new Account("PB12345546", 386, "Ivanov Ivan Ivanovich");
+		Account ivanov5 = new Account("PB12345547", 0, "Ivanov Ivan Ivanovich");
+		Account sidarov = new Account("PI12345530", -100, "Sidarov Nikolay Ivanovich");
+		Account sidarov2 = new Account("PI12345531", 560, "Sidarov Nikolay Ivanovich");
+		
+		
+		System.out.println(ivanov5.getStatus());
+		
+		
+
+	}
+
+}

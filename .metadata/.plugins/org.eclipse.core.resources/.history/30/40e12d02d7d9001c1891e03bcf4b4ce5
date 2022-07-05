@@ -1,0 +1,25 @@
+package by.jonline.ht03.main;
+
+public class Task_29 {
+
+	public static void main(String[] args) {
+		
+		int a;
+		int b;
+		int i;
+		
+		a = 123456;
+		b = 456789;
+		i = 0;
+		
+		while (a > 0) {
+			a /= 10;
+			i += 1;
+		};
+		System.out.println(i);
+		System.out.println(a);
+		
+
+	}
+
+}

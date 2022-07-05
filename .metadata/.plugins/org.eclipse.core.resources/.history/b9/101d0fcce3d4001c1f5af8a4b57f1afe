@@ -1,0 +1,30 @@
+package by.online.ht02.main;
+
+//3 points on one straight line
+
+public class Task_29 {
+
+	public static void main(String[] args) {
+		
+		double x1, y1;
+		double x2, y2;
+		double x3, y3;
+		double accuracy;
+		
+		x1 = 5;
+		y1 = 6;
+		x2 = 5;
+		y2 = 6;
+		x3 = 5;
+		y3 = 6;
+		accuracy = 1e-15;
+		
+		if( ( (x3 - x1) / (x2 - x1) ) - ( (y3 - y1) / (y2 - y1) ) <= accuracy) {
+			System.out.println("Yes");
+		}else {
+			System.out.println("No");
+		}
+
+	}
+
+}

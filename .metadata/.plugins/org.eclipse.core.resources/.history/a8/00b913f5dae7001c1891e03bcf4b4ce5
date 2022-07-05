@@ -1,0 +1,23 @@
+package by.jonline.ht05.main;
+
+public class Task_06 {
+
+	public static void main(String[] args) {
+
+		int n = 4;
+		int a[][] = new int[n][n];
+
+		
+		for (int k = n / 2; k < n; k++) {
+			for (int l = k; l < n - k; l++) {
+				a[k][l] = 1;
+				System.out.print(a[k][l] + " ");
+			}
+			;
+			System.out.println();
+		}
+		;
+
+	}
+
+}

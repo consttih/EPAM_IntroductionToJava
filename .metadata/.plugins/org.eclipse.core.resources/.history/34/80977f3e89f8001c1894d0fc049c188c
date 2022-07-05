@@ -1,0 +1,33 @@
+package by.jonline.str_as_an_array.task05;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String str = "     my         name is     Konstantin    ";
+		deleteSpaces(str);
+
+	}
+	
+	public static void deleteSpaces(String str) {
+		
+		StringBuilder newstr = new StringBuilder();
+		String str2 = str.trim();
+		
+		for (int i = 1; i < str2.length(); i++) {
+			
+			if (str2.charAt(i) == ' ' && str2.charAt(i - 1) == ' ') {
+				
+			}else if (i == 1){
+				newstr.append(str2.charAt(0));
+			}else {
+				newstr.append(str2.charAt(i));
+			}
+		}
+		
+		newstr.append('!');
+		newstr.toString();
+		System.out.println(newstr);
+	}
+
+}

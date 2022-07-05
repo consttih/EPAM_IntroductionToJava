@@ -1,0 +1,12 @@
+package by.online.ht02.main;
+
+public class Task_17 {
+
+	public static void main(String[] args) {
+		int a;
+		
+		a = 1e6;
+		System.out.println(a);
+	}
+
+}

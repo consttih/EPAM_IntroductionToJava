@@ -1,0 +1,38 @@
+package by.jonline.basicsofoop.task01;
+
+public class TextFile extends File{
+	
+	private String content = "";
+
+	public TextFile() {
+		super();
+	}
+
+	public TextFile(String name, Directory directoryName) {
+		super(name, directoryName);
+	}
+	
+	public String showContent() {
+		return getContent();
+	}
+	
+	public String complement(String text) {
+		StringBuilder sb = new StringBuilder();
+		sb.append(this.getContent()).append(" ").append(text);
+		String text2 = sb.toString();
+		return text2;
+	}
+	
+	public String getContent() {
+		return content;
+	}
+
+	public void setContent(String content) {
+		this.content = content;
+	}
+	
+	
+	
+	
+
+}

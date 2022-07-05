@@ -1,0 +1,26 @@
+package by.jonline.ht04.main;
+
+public class Task_04 {
+
+	public static void main(String[] args) {
+
+		int n = 20;
+		int max = 0;
+		int[] a = new int[n];
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = ((int) (Math.random() * (2 * n + 1)) - n);
+
+			System.out.println((i + 1) + ") " + a[i]);
+
+			for (int j = 1; j < a.length; j++)
+				max = a[0];
+				if (a[i] > a[i - 1]) {
+					max = a[i];
+				}
+		}
+		;
+		System.out.print(max);
+	}
+
+}

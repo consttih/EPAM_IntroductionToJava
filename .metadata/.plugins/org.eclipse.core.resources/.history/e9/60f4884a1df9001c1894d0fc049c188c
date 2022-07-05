@@ -1,0 +1,25 @@
+package by.jonline.str_as_an_object.task07;
+
+public class Main {
+
+	public static void main(String[] args) {
+		String str = "abc cde def";
+		withoutRepetitionaAndSpace(str);
+
+	}
+	
+	public static void withoutRepetitionaAndSpace(String str) {
+		
+		StringBuilder sb = new StringBuilder();
+		
+		for(int i = 0; i < str.length(); i++) {
+			if(!(str.contains(Character.toString(str.charAt(i)))) || !(str.charAt(i) == ' ')) {
+				sb.append(str.charAt(i));
+			}
+		}
+		
+		sb.toString();
+		System.out.println(sb);
+	}
+
+}

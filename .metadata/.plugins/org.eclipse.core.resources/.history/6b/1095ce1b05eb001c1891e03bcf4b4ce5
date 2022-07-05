@@ -1,0 +1,115 @@
+package by.jonline.ht07.main;
+
+import java.util.Scanner;
+
+public class Task_02 {
+
+	public static void main(String[] args) {
+
+		int a;
+		int b;
+		int c;
+		int d;
+
+		int NOD;
+
+		a = enterFromConsole("a>> ");
+		b = enterFromConsole("b>> ");
+		c = enterFromConsole("c>> ");
+		d = enterFromConsole("d>> ");
+
+		NOD = NOD(a, b, c, d);
+
+		System.out.println("for numbers " + a + " and " + b + " and " + c + " and " + d + " NOD is " + NOD);
+
+	};
+
+	public static int enterFromConsole(String message) {
+
+		@SuppressWarnings("resource")
+		Scanner sc = new Scanner(System.in);
+		int value;
+
+		System.out.print(message);
+		while (!sc.hasNextInt()) {
+			sc.next();
+			System.out.print(message);
+		}
+		;
+
+		value = sc.nextInt();
+		return value;
+
+	};
+
+	public static int NOD(int x1, int x2, int x3, int x4) {
+
+		int NOD;
+
+		if (x1 >= x2 && x1 >= x3 && x1 >= x4) {
+
+			NOD = 1;
+
+			for (int i = x1 / 2; i > 1; i--) {
+
+				if (x1 % i == 0 && x2 % i == 0 && x3 % i == 0 && x4 % i == 0 && i > NOD) {
+
+					NOD = i;
+				}
+				;
+			}
+			;
+		}
+		;
+		if (x2 >= x1 && x2 >= x3 && x2 >= x4) {
+
+			NOD = 1;
+
+			for (int i = x2 / 2; i > 1; i--) {
+
+				if (x1 % i == 0 && x2 % i == 0 && x3 % i == 0 && x4 % i == 0 && i > NOD) {
+
+					NOD = i;
+				}
+				;
+			}
+			;
+		}
+		;
+		if (x3 >= x1 && x3 >= x2 && x3 >= x4) {
+			NOD = 1;
+
+			for (int i = x3 / 2; i > 1; i--) {
+
+				if (x1 % i == 0 && x2 % i == 0 && x3 % i == 0 && x4 % i == 0 && i > NOD) {
+
+					NOD = i;
+				}
+				;
+			}
+			;
+
+		}
+		;
+		if (x4 >= x1 && x4 >= x3 && x4 >= x2) {
+
+			NOD = 1;
+
+			for (int i = x4 / 2; i > 1; i--) {
+
+				if (x1 % i == 0 && x2 % i == 0 && x3 % i == 0 && x4 % i == 0 && i > NOD) {
+
+					NOD = i;
+				}
+				;
+			}
+			;
+
+		}
+		;
+
+		return NOD;
+
+	};
+
+}

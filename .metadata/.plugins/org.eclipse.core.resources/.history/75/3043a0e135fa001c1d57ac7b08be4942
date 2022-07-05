@@ -1,0 +1,20 @@
+package by.jonline.pattern_matcher.task02;
+
+import java.util.regex.Pattern;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		System.out.println("привет");
+		
+		Pattern openTag = Pattern.compile("<.+?>");
+		Pattern closeTag = Pattern.compile("</.+?>");
+		Pattern contentTag = Pattern.compile(">.+?<");
+		Pattern emptyTag = Pattern.compile("<.+?/>");
+		
+		
+
+	}
+
+}

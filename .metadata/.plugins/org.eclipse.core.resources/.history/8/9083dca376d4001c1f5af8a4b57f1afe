@@ -1,0 +1,23 @@
+package by.online.ht02.main;
+
+import java.util.Scanner;
+
+public class Task_21 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		String ans;
+		
+		ans = sc.next();
+	
+		if(ans == "G") {
+			System.out.println("I love girls!");
+			
+		}else if(ans == "B") {
+			System.out.println("I love boys!");
+		};
+		}
+		
+	}
+

@@ -1,0 +1,21 @@
+package by.jonline.ht06.main;
+
+import java.util.Arrays;
+
+public class Task_01 {
+
+	public static void main(String[] args) {
+		
+		int[] array_1 = {10, 2, 10, 3, 1, 2, 5};
+		System.out.println(Arrays.toString(array_1));
+		
+		int[] array_2 = {23, 5, 6, 7};
+		System.out.println(Arrays.toString(array_2));
+		
+		int k = 3;
+		
+		
+	
+	}
+
+}

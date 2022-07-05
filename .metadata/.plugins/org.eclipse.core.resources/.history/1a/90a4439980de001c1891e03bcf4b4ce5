@@ -1,0 +1,30 @@
+package by.jonline.ht04.main;
+
+public class Task_08 {
+
+	public static void main(String[] args) {
+
+		int n = 20;
+
+		int[] a = new int[n];
+
+		for (int i = 0; i < a.length; i++) {
+			a[i] = ((int) (Math.random() * 201) - 100);
+			System.out.println((i + 1) + ") " + a[i]);
+		}
+		;
+
+		int min = a[0];
+
+		for (int j = 0; j < a.length; j++) {
+
+			if (a[j] <= min) {
+				min = a[j];
+			}
+			;
+		}
+		;
+		System.out.println(min);
+	}
+
+}

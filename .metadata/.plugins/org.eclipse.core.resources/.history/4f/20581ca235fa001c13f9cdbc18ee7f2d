@@ -1,0 +1,12 @@
+package by.jonline.pattern_matcher.task02;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		System.out.println("привет");
+	
+
+	}
+
+}

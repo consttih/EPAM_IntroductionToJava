@@ -1,0 +1,29 @@
+package by.jonline.str_as_an_object.task08;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String str = "hiiiiiiiii hii      hiiii  ";
+		theLargestWord(str);
+
+	}
+	
+	public static void theLargestWord(String str) {
+	
+		String[] words = str.split(" ");
+		String largestWord = new String();
+		int maxLenght = 0;
+		
+		for (int i = 0; i < words.length; i++) {
+			
+			if(words[i].length() > maxLenght) {
+				maxLenght = words[i].length();
+				largestWord = words[i];
+			}
+		}
+		
+		System.out.println(largestWord);
+	}
+
+}

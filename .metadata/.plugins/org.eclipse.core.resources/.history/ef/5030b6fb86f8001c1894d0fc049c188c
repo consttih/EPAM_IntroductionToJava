@@ -1,0 +1,32 @@
+package by.jonline.str_as_an_array.task05;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String str = " You shall find of the king a  husband, madam; you,\n" +
+                "sir, a father: he that so  generally is at all  times\n" +
+                "good  must   of necessity hold his virtue to you;  whose\n" +
+                "worthiness would  stir it up where it wanted rather\n" +
+                "than lack it where there is such abundance.   ";
+		deleteSpaces(str);
+
+	}
+	
+	public static void deleteSpaces(String str) {
+		
+		StringBuilder newstr = new StringBuilder();
+		
+		for (int i = 1; i < str.length(); i++) {
+			
+			if (str.charAt(i) == ' ' && str.charAt(i - 1) == ' ') {
+				
+			}else {
+				newstr.append(str.charAt(i));
+			}
+		}
+		
+		System.out.println(newstr);
+	}
+
+}

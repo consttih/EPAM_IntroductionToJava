@@ -1,0 +1,44 @@
+package by.jonline.simpleclasses.task03;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		Student[] list_of_stud = new Student[10];
+
+		for (int i = 0; i < list_of_stud.length; i++) {
+
+			System.out.println("Enter surname: \n >>");
+			Scanner surname = new Scanner(System.in);
+			String sname;
+			sname = surname.nextLine();
+
+			System.out.println("Enter initials (like A.A.): \n >>");
+			Scanner initials = new Scanner(System.in);
+			String init;
+			init = initials.nextLine();
+
+			System.out.println("Enter nummer of group: \n >>");
+			Scanner group = new Scanner(System.in);
+			int num;
+			num = group.nextInt();
+
+			System.out.println("Enter academic performance (5 grades): \n");
+			int[] progr = new int[5];
+			for (int j = 0; j < progr.length; j++) {
+				System.out.print(j + ")\n ");
+				Scanner progress = new Scanner(System.in);
+				progr[j] = progress.nextInt();
+			}
+			;
+
+			list_of_stud[i] = new Student(sname, init, num, progr);
+
+		}
+		;
+
+	}
+
+}

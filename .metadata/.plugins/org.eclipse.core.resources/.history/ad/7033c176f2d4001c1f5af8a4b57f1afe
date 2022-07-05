@@ -1,0 +1,21 @@
+package by.jonline.ht03.main;
+
+public class Task_05 {
+
+	public static void main(String[] args) {
+
+		int a;
+		int s;
+		a = 1;
+		s = 0;
+		
+		while (a < 100) {
+			a = a + 2;
+			s = s + a;
+			System.out.println(a);
+			System.out.println(s);
+		}
+
+	}
+
+}

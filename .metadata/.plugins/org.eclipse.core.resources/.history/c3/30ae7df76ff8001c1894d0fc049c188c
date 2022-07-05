@@ -1,0 +1,13 @@
+package by.jonline.str_as_an_array.task01;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		String[] array_of_camel = {"greenCar", "brightSun", "bigDog", "littleCat"};
+		
+		System.out.println(array_of_camel);
+
+	}
+
+}

@@ -1,0 +1,23 @@
+package by.jonline.ht03.main;
+
+public class Task_12 {
+
+	public static void main(String[] args) {
+	int a1;
+	int an;
+	int an1;
+	int s;
+	
+	a1 = 1;
+	s = 0;
+	
+	 for (int i = 1; i < 10; i++) {
+		 an1 = a1;
+		 an = 6 + an1;
+		 s = s * an;
+		 a1 = an;
+	 };
+	 System.out.print(s);
+	}
+
+}

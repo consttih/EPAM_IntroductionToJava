@@ -1,0 +1,56 @@
+package by.jonline.basicsofoop.task01;
+
+import java.util.ArrayList;
+
+public class Directory {
+	
+	private String name;
+	private ArrayList<TextFile> files;
+	
+	public Directory() {};
+	
+	public Directory(String name) {
+		super();
+		this.name = name;
+		files = new ArrayList<>();
+	}
+
+	public Directory addTextFile(TextFile file) {
+		files.add(file);
+		return this;
+	}
+	
+	public void removeFile(String filename) {
+		
+		for (TextFile file : files) {
+			
+			if (file.getName().compareToIgnoreCase(filename) == 0) {
+				files.remove(file);
+			}
+		}
+	}
+	
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public ArrayList<TextFile> getFiles() {
+		return files;
+	}
+
+	public void setFiles(ArrayList<TextFile> files) {
+		this.files = files;
+	}
+
+	@Override
+	public String toString() {
+		return "Directory [name=" + name + ", files=" + files + "]";
+	}
+	
+	
+
+}
